@@ -7,6 +7,7 @@ export function Main() {
         <>
             <UserList anchor="right" />
             <MessageList />
+            <LobbyList anchor="left" />
         </>
     );
 }

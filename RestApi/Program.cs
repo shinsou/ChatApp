@@ -1,4 +1,6 @@
-WebApplication.CreateBuilder(args)
+WebApplication
+    .CreateBuilder(args)
+    .ConfigureLogging()
     .ConfigureServices()
     .Build()
     .ConfigureApi()

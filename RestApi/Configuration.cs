@@ -43,9 +43,17 @@ static class Configuration
         }
 
         app.UseHttpsRedirection();
-
+        
+        app.UseStaticFiles();
 
         app.MapControllers();
+        app.UseRouting();
+
+        app.MapControllerRoute(
+            name: "default",
+            pattern: "{controller}/{action=Index}/{id?}");
+
+        app.MapFallbackToFile("index.html");
 
         return app;
     }

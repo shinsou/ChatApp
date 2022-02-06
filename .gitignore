@@ -366,3 +366,4 @@ FodyWeavers.xsd
 private.crt
 private.csr
 private.key
+*env.development.local

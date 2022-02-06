@@ -10,9 +10,23 @@ static class Configuration
         services.AddEndpointsApiExplorer();
         services.AddSwaggerGen();
 
+        services.AddCors(options =>
+        {
+            if (app.Environment.IsDevelopment())
+            {
+                options.AddPolicy(
+                    "DefaultCorsPolicy",
+                    builder => builder
+                        .AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                );
+            }
+        });
+
         return app;
     }
-    
+
     public static WebApplicationBuilder ConfigureLogging(this WebApplicationBuilder app)
     {
         app.Host.UseSerilog(BuildSerilogConfigurations);

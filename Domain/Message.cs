@@ -9,5 +9,7 @@ namespace Domain
 
         public string Content { get; set; }
         public string LobbyId { get; set; }
+
+        public Lobby Lobby { get; set; }
     }
 }

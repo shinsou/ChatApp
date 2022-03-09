@@ -1,11 +1,11 @@
 import { LobbyList } from "../lobbyList";
 import { MessageList } from "../messageList";
-import { UserList } from "../memberList";
+import { MemberList } from "../memberList";
 
 export function Main() {
     return (
         <>
-            <UserList anchor="right" />
+            <MemberList anchor="right" />
             <MessageList />
             <LobbyList anchor="left" />
         </>

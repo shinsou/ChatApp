@@ -1,12 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Domain.Abstract;
 
 namespace Domain
 {
-    internal class Lobby
+    public class Lobby : AuditableEntity<string>
     {
+        public Lobby() { }
+        public Lobby(string id) : base(id) { }
+
+        public string Name { get; set; }
+        public IEnumerable<Message> Messages { get; set; }
     }
 }

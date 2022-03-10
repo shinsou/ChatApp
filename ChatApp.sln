@@ -3,15 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{44696EED-E081-47FE-891C-7A82B5DFAF9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "src\Domain\Domain.csproj", "{44696EED-E081-47FE-891C-7A82B5DFAF9E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{7B533CDC-F857-46DB-86B2-C3E1B33DFFFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "src\Application\Application.csproj", "{7B533CDC-F857-46DB-86B2-C3E1B33DFFFA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{D3F754C7-B1F0-4DF5-BF54-4AC0EF11AE74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "src\Infrastructure\Infrastructure.csproj", "{D3F754C7-B1F0-4DF5-BF54-4AC0EF11AE74}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi", "RestApi\RestApi.csproj", "{A148E014-3B9F-4F64-A130-D605DEAC03D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestApi", "src\RestApi\RestApi.csproj", "{A148E014-3B9F-4F64-A130-D605DEAC03D6}"
 EndProject
-Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "App", "App\App.esproj", "{26C7D313-F65A-46DA-ABB8-EFCB9ECB2CFC}"
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "App", "src\App\App.esproj", "{26C7D313-F65A-46DA-ABB8-EFCB9ECB2CFC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

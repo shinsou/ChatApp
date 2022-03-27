@@ -13,6 +13,7 @@ module.exports = mergeWithRules({
   plugins: 'append'
 })(common, {
   mode: 'develop',
+  devtool: 'cheap-module-source-map',
   module: {
     rules: [
       {

@@ -8,7 +8,7 @@
     <JavaScriptTestFramework>Jest</JavaScriptTestFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Script Include="**" Exclude="*.esproj;**\node_modules\**" />
+    <Script Include="**" Exclude="*.esproj;node_modules\**" />
   </ItemGroup>
   <ItemGroup>
     <Script Remove="aspnetcore-https.js" />

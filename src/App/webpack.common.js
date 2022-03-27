@@ -18,6 +18,8 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true
     },
+    cache: true,
+    devtool: true,
     module: {
         rules: [
             {

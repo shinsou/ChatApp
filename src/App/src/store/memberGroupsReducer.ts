@@ -1,7 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+export type MemberGroupType = {
+    id: string;
+    groupName: string;
+}
 
-const initialState = [
+const initialState: Array<MemberGroupType> = [
     {
         id: '1',
         groupName: 'Admins'

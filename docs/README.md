@@ -23,7 +23,7 @@ Someone looking for
 
 # Tech in short
 
-... more in Wiki
+... more in Wiki (todo)
 
 - .NET6 (at the moment)
 - React TSv17 (at the moment)

@@ -19,7 +19,7 @@ module.exports = {
         clean: true
     },
     cache: true,
-    devtool: true,
+    devtool: 'source-map',
     module: {
         rules: [
             {

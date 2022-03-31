@@ -21,7 +21,9 @@ Someone looking for
   - > I work with this when I have "time"
 - ... wasting time or other stuff that I'm not getting paid for, sorry :)
 
-# Tech in short, more in Wiki
+# Tech in short
+
+... more in Wiki
 
 - .NET6 (at the moment)
 - React TSv17 (at the moment)

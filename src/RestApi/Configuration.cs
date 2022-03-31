@@ -55,6 +55,18 @@ static class Configuration
 
         app.MapFallbackToFile("index.html");
 
+        app.Use(async (context, next) =>
+        {
+            context.Response.OnStarting(() =>
+            {
+                context.Response.Headers.Add("Content-Security-Policy", "default-src 'self';style-src 'self'");
+
+                return Task.CompletedTask;
+            });
+
+            await next();
+        });
+
         return app;
     }
 

@@ -1,4 +1,12 @@
-import { Box, Drawer, List, ListItemButton, ListItemText, Toolbar } from "@mui/material";
+import {
+    Box,
+    Drawer,
+    List,
+    ListItem,
+    ListItemButton,
+    ListItemText,
+    Toolbar
+} from "@mui/material";
 import { useSelector } from "react-redux";
 import { Lobby } from "../models/Lobby";
 import { RootState } from "../store/configureStore"
@@ -14,7 +22,7 @@ const init: LobbyListProps = {
 
 export function LobbyList(props: LobbyListProps) {
     const options = { ...init, ...props };
-    
+
     const lobbies = useSelector((state: RootState) => state.lobbies);
 
     return (
@@ -33,11 +41,13 @@ export function LobbyList(props: LobbyListProps) {
             <Toolbar />
             <Box sx={{ overflow: 'auto' }}>
                 <List dense={true}>
-                {lobbies.map((lobby)=> (
-                    <ListItemButton key={`lobby-${lobby.id}`}>
-                        <ListItemText primary={lobby.name} />
-                    </ListItemButton>
-                ))}
+                    {lobbies.map((lobby) => (
+                        <ListItem key={`lobby-${lobby.id}`} sx={{ paddingLeft: 0, paddingRight: 0 }}>
+                            <ListItemButton>
+                                <ListItemText primary={lobby.name} />
+                            </ListItemButton>
+                        </ListItem>
+                    ))}
                 </List>
             </Box>
         </Drawer>

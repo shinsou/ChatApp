@@ -38,9 +38,9 @@ const init: MemberListProps = {
 
 const Members = ({id, groupName}) => {
     const members: Array<Member> = useSelector((state: RootState) => state.members);
-    console.log(`${id} | ${groupName}`);
+
     return (
-        <List dense={true}>
+        <List dense={true} key={`group-${id}-members`}>
             {members.filter(member => member.groupMember === id || (groupName === 'Members' && !member.groupMember)).map((member) => (
                 <ListItem key={`member-${id}-${member.id}`}>
                     <ListItemButton>
@@ -67,9 +67,7 @@ const MemberGroups = () => {
                     <ListSubheader component="div">
                         {group.groupName}
                     </ListSubheader>
-                    <ListItem key={`group-${group.id}-members`}>
-                        <Members {...group} />
-                    </ListItem>
+                    <Members {...group} />
                 </li>
             ))}
         </List>

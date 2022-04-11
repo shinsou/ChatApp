@@ -101,10 +101,10 @@ const Messages = () => {
 }
 
 const MessageContainer = (props) => {
-    const { index, data } = props;
+    const { index, data, style } = props;
 
     return (
-        <ListItem key={`message-id-${data[index].id}`} component="div" sx={{ paddingLeft: 0, paddingRight: 0 }}>
+        <ListItem key={`message-id-${data[index].id}`} component="div" sx={{ paddingLeft: 0, paddingRight: 0 }} style={style}>
             <ListItemButton>
                 <ListItemAvatar>
                     {/*<Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />*/}
